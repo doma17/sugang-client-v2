@@ -1,0 +1,319 @@
+/**
+ * Basic
+ */
+
+html {
+  margin: auto;
+  height: 100%;
+}
+
+body {
+  text-align: center;
+  margin: unset;
+  font-family: HelveticaNeue-light, arial, sans-serif;
+  color: #555555;
+}
+
+h3 {
+  text-align: left;
+  margin-bottom: 12px;
+  margin-top: 21px;
+}
+
+ol li, ul li {
+  margin-bottom: 12px;
+}
+
+img {
+  margin-bottom: 12px;
+}
+
+
+/**
+ * Layouts
+ */
+
+.title-area {
+  background-color: #292d32;
+  padding: 12px;
+  font-weight: 600;
+  color: white;
+}
+
+.title-area a,  .notice-area a {
+  color: white;
+}
+
+.notice-area {
+  background-color: #5f447a;
+  padding: 12px;
+  font-weight: 600;
+  color: white;
+}
+
+.content-area {
+  margin: auto;
+  text-align: center;
+  display: table;
+  max-width: 500px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.section {
+  text-align: left;
+}
+
+.footer {
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
+.footer-text {
+  text-align: center;
+  color: rgb(159, 159, 159);
+  font-size: 12px;
+  margin-top: 16px;
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background: #cccccc;
+}
+
+/**
+ * Inputs
+ */
+
+/* Usage of input */
+.form-input, .col-input {
+  font-size: 16px;
+  padding: 12px 16px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-input {
+  width: 100%;
+}
+
+.col-input {
+  min-width: 0;
+  width: inherit;
+}
+
+
+/**
+ * Buttons
+ */
+
+/* Type of button  */
+.green-button, .plain-button {
+  border: none;
+  border-radius: 4px;
+}
+
+.green-button {
+  color: white;
+  background-color: #4CAF50;
+}
+
+.green-consumed-button {
+  color: white;
+  background-color: #4CAF50;
+  opacity: 0.6;
+}
+
+.green-button:hover {
+  background-color: #45a049;
+}
+
+.plain-button {
+  color: #555555;
+  background-color: #DDDDDD;
+}
+
+.plain-button:hover {
+  background-color: #cfcfcf;
+}
+
+/* Usage of button */
+.form-button, .col-button {
+  font-size: 16px;
+  padding: 12px 16px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-button {
+  width: 100%;
+}
+
+.col-button {
+  width: inherit;
+  height: 47px;
+  padding: 12px;
+}
+
+
+/**
+ * Row
+ */
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.row > * + * {
+  /* Gaps between items in a row */
+  margin-left: 6px;
+}
+
+.col, .col-9, .col-8, .col-7, .col-6, .col-4, .col-3, .col-2, .col-1 {
+  height: 47px;
+}
+
+.col-9 {
+  flex-grow: 9;
+}
+
+.col-8 {
+  flex-grow: 8;
+}
+
+.col-7 {
+  flex-grow: 7;
+}
+
+.col-6 {
+  flex-grow: 6;
+}
+
+.col-4 {
+  flex-grow: 4;
+}
+
+.col-3 {
+  flex-grow: 3;
+}
+
+.col-2 {
+  flex-grow: 2;
+}
+
+.col-1 {
+  flex-grow: 1;
+}
+
+
+/**
+ * Elements
+ */
+
+.description {
+  text-align: left;
+  font-size: 14px;
+  margin-left: 1px;
+}
+
+.safe-message {
+  text-align: left;
+  font-size: 14px;
+  margin-left: 1px;
+  color: #378d31;
+  overflow: hidden;
+
+  line-height: 0;
+  transition: line-height 0.3s linear;
+}
+
+.memo-pad {
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  margin: 8px 12px 0 12px;
+  border: none;
+  background-color: #ffec6f;
+  padding: 18px;
+}
+
+.clock-container {
+  width: 100%;
+  padding: 10px 10px 5px 10px;
+  margin: 8px 0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #1b2117;
+  text-align: center;
+}
+
+#clock {
+  color: #5fe264;
+  margin: auto;
+  font-size: min(15vw, 4em); /* max 4em */
+  font-family: 'digital-7', sans-serif;
+}
+
+#sugangFormRows {
+  margin-top: 12px;
+}
+
+
+/**
+ * Sidebar layout
+ */
+
+/* Wrapper(layout) */
+.main-sidebar-wrapper {
+  margin: 0 auto;
+  text-align: center;
+  display: table;
+  max-width: 500px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* The main content(center) */
+.main {
+  float:left;
+}
+
+/* The sidebar(right) */
+.sidebar {
+  float:left;
+  margin-right: -200px;
+  width: 200px;
+  height: 300px;
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+
+/**
+ * Fonts
+ */
+
+@font-face {
+  font-family: 'digital-7';
+  src: url('digital-7.ttf');
+}
+
+/**
+ * Animated
+ */
+.opacity-transition {
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
