@@ -9,7 +9,7 @@ ___
     - cd ./sugang-client
       
 2. 웹팩 서버 시작
-    - npm start# sugang-client-v2
+    - npm start
       
 3. ~~***이것도 못하면 당신은 컴공의 자격이 없다.***~~
 ___
